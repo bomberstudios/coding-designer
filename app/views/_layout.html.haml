@@ -1,0 +1,18 @@
+!!!
+%html(lang="en")
+  %head
+    %meta(charset="utf-8")
+    %meta(content="width=device-width" name="viewport")
+    %title Coding Designer
+    / Included CSS Files
+    = stylesheet_link_tag "app"
+
+  %body{ :class => routeclass }
+    .menu
+      %ul
+        %li#start=link_to "Start", "/"
+        %li#docs=link_to "Docs", "/docs"
+        %li#updating=link_to "Updating", "/updating"
+
+    .page
+      = yield

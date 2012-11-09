@@ -1,0 +1,90 @@
+$orange: #f60;
+$dark_grey: #444;
+
+$menu_bg: $dark_grey;
+$menu_link_color: #fff;
+$menu_link_color_selected: $orange;
+$body_text_color: $dark_grey;
+$link_color: $orange;
+
+$page_width: 800px;
+
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  padding: 0;
+  color: $body_text_color;
+}
+
+.page {
+  width: $page_width;
+  margin: 0 auto;
+  font-weight: 300;
+  margin-bottom: 100px;
+  h1 {
+    font-weight: 200;
+    font-size: 30px;
+    color: $orange;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: $dark_grey;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-top: 50px;
+  }
+  a,
+  a:visited {
+    color: $link_color;
+  }
+}
+
+.menu {
+  background-color: $menu_bg;
+  padding: 10px;
+  ul {
+    width: 800px;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+    li {
+      padding: 10px;
+      display: inline;
+      margin-right: 15px;
+    }
+  }
+  a,
+  a:visited {
+    color: $menu_link_color;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+  }
+}
+
+body.index    .menu #start,
+body.docs .menu #docs,
+body.updating .menu #updating {
+  border-bottom: 3px solid $orange;
+  a {
+    font-weight: 500;
+    color: $menu_link_color_selected;
+  }
+}
+
+code {
+  font-family: Consolas, Menlo, fixed;
+  font-size: 12px;
+  background-color: $dark_grey;
+  color: #0f0;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+#racknotes {
+  font-size: 13px;
+}
