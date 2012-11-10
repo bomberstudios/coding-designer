@@ -1,3 +1,5 @@
+@import "compass/css3";
+
 $orange: #f60;
 $dark_grey: #444;
 
@@ -79,6 +81,7 @@ body.updating .menu #updating {
 code {
   background-color: #ccc;
   padding: 0 4px;
+  @include border-radius(3px);
 }
 pre > code {
   font-family: Consolas, Menlo, fixed;
@@ -86,9 +89,14 @@ pre > code {
   background-color: $dark_grey;
   color: #0f0;
   padding: 10px;
-  border-radius: 3px;
 }
 
 #racknotes {
   font-size: 13px;
+}
+
+blockquote {
+  color: #999;
+  font-family: Georgia, serif;
+  font-style: italic;
 }
