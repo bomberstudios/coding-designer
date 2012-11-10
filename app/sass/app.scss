@@ -77,6 +77,10 @@ body.updating .menu #updating {
 }
 
 code {
+  background-color: #ccc;
+  padding: 0 4px;
+}
+pre > code {
   font-family: Consolas, Menlo, fixed;
   font-size: 12px;
   background-color: $dark_grey;
