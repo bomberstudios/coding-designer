@@ -1,6 +1,8 @@
 # Documentation
 
-## Welcome to a Work In Progress
+**Remember:** this is a work in progress.
+
+## Introduction
 
 If you are reading this, it means you are interested in using a workflow for front-end design / development that is both powerful and painless. Well, I have good news for you: **this is it**.
 
@@ -25,7 +27,10 @@ If you don't like my choices, or simply need to use a different combination, Ser
 
 To make all this technology visible, we'll use [Pow](http://pow.cx), a really smart piece of software that makes your code available to a web browser using a friendly URL. Pow is quite simple to setup and use, but [Anvil](http://anvilformac.com) is a graphical front end that makes it ridiculously easy. **We love easy**, so Anvil is part of the toolchain.
 
+
 ## File structure
+
+Now that you know what's under the hood, let's take a look at the file structure of this project.
 
 - app
 - www
@@ -94,3 +99,4 @@ What good is a web development workflow if it doesn't let you export your highly
 ## Tips & tricks
 
 - Keep your editable PNG files inside the repo and let rack-smusher compress them.
+

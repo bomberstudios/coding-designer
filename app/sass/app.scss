@@ -69,7 +69,8 @@ body {
 }
 
 body.index    .menu #start,
-body.docs .menu #docs,
+body.docs     .menu #docs,
+body.workflow .menu #workflow,
 body.updating .menu #updating {
   border-bottom: 3px solid $orange;
   a {
