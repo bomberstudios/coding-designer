@@ -25,7 +25,7 @@ module ViewHelpers
     #  links << File.basename(file,'.md')
     #end
     #return links
-    return ['workflow','documentation','updating']
+    return ['workflow','documentation','tips','updating']
   end
 
 end

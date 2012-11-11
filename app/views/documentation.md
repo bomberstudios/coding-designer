@@ -87,7 +87,3 @@ What good is a web development workflow if it doesn't let you export your highly
 
 - Heroku
 
-## Tips & tricks
-
-- Keep your editable PNG files inside the repo and let rack-smusher compress them.
-
