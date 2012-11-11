@@ -1,10 +1,8 @@
 # Documentation
 
-**Remember:** this is a work in progress.
-
 ## What's under the hood
 
-My choice of languages when it comes to front-end code is pretty personal. For HTML, I like [Haml](http://haml.info) (in fact, I've never written a single line of HTML since I started using it), for CSS I love [Sass](http://sass-lang.com) (in its SCSS incarnation, paired with [Compass](http://compass-style.org)) and for JavaScript I use, well, good old JavaScript.
+My choice of languages when it comes to front-end code is pretty personal. For HTML, I like [Haml](http://haml.info) (in fact, I haven't written a single line of HTML since I started using it). For CSS I love [Sass](http://sass-lang.com) (in its SCSS incarnation, paired with [Compass](http://compass-style.org)) and for JavaScript I use, well, good old JavaScript.
 
 If I have to write long pieces of text (like this documentation) I use [Markdown](http://daringfireball.net/markdown). Actually, I think I use Markdown for pretty much anything, regardless of its length…
 
