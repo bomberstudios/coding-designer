@@ -1,7 +1,5 @@
 # Philosophy
-### a *modern* design process
-
-## The *whys* and *why nots* of using code as part of the design process.
+### The ‘whys’ and ‘why nots’ of using code as part of the design process.
 
 Unless you've been living under a rock for the last couple of years, you know there's an open debate about the issue of whether a designer should know how to code or not.
 

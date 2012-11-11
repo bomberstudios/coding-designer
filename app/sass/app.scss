@@ -1,5 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:300);
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic);
 
 @import "compass/css3";
 
@@ -13,21 +12,24 @@ $menu_link_color: #333;
 $menu_link_color_selected: $orange;
 $link_color: $orange;
 
-$page_width: 714px;
 
 $body_text_color: #000;
-$body_font_family: "Georgia";
-$body_font_family: "Source Sans Pro";
+$body_font_family: "Helvetica Neue";
 $body_font_weigth: 300;
-$body_font_size: 16px;
+$body_font_size: 15px;
+$line_height_multiplier: 1.4;
 
 $title_font_family: "Oswald";
+
+$page_width: 714px;
+$page_width: $body_font_size * 40;
+
 
 body {
   font-family: $body_font_family, Helvetica, Arial, sans-serif;
   font-weight: $body_font_weigth;
   font-size: $body_font_size;
-  line-height: $body_font_size * 1.4;
+  line-height: $body_font_size * $line_height_multiplier;
   margin: 0;
   padding: 0;
   color: $body_text_color;
@@ -50,14 +52,16 @@ body {
   width: 240px;
   text-align: right;
   margin-top: 60px;
+  font-size: $body_font_size * 0.9;
   h1 {
     font-weight: 200;
     font-size: 26px;
     border-bottom: 1px solid #f0f0f0;
     padding-bottom: 10px;
     small {
+      font-family: $title_font_family;
       display: block;
-      font-size: 13px;
+      font-size: $body_font_size;
       margin-top: 8px;
       color: #ccc;
     }
@@ -83,7 +87,7 @@ body {
   a:visited {
     color: $menu_link_color;
     text-decoration: none;
-    font-size: 14px;
+    //font-size: 14px;
     font-weight: 300;
   }
 }
@@ -109,7 +113,8 @@ body {
     margin-top: 50px;
   }
   h1 + h3 {
-    font-size: 16px;
+    font-family: $title_font_family;
+    font-size: $body_font_size * 1.2;
     font-weight: 300;
     text-transform: uppercase;
     color: #999;
@@ -138,15 +143,16 @@ body {
   p {
     width: 600px;
     text-indent: 1em;
-    line-height: $body_font_size * 1.5;
+    line-height: $body_font_size * $line_height_multiplier;
     margin-bottom: 20px;
   }
-  ul {
+  ul,
+  ol {
     width: 600px;
-    line-height: 24px;
-    margin-bottom: 20px;
+    line-height: $body_font_size * $line_height_multiplier;
+    margin-bottom: $body_font_size * 2;
     li {
-      margin-bottom: 5px;
+      margin-bottom: $body_font_size / 2;
     }
   }
   img {
