@@ -11,18 +11,23 @@ $darker_grey: #222;
 $menu_bg: $dark_grey;
 $menu_link_color: #333;
 $menu_link_color_selected: $orange;
-$body_text_color: #000;
 $link_color: $orange;
 
 $page_width: 714px;
+
+$body_text_color: #000;
+$body_font_family: "Georgia";
 $body_font_family: "Source Sans Pro";
+$body_font_weigth: 300;
+$body_font_size: 16px;
+
 $title_font_family: "Oswald";
 
 body {
   font-family: $body_font_family, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 22px;
+  font-weight: $body_font_weigth;
+  font-size: $body_font_size;
+  line-height: $body_font_size * 1.4;
   margin: 0;
   padding: 0;
   color: $body_text_color;
@@ -133,7 +138,7 @@ body {
   p {
     width: 600px;
     text-indent: 1em;
-    line-height: 24px;
+    line-height: $body_font_size * 1.5;
     margin-bottom: 20px;
   }
   ul {

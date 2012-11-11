@@ -25,7 +25,7 @@ module ViewHelpers
     #  links << File.basename(file,'.md')
     #end
     #return links
-    return ['philosophy','workflow','documentation','tips','updating']
+    return ['philosophy', 'installation', 'workflow','documentation','tips','updating']
   end
 
   def google_analytics

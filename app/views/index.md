@@ -6,6 +6,8 @@ I've been editing HTML for \*cough\* *15 years* \*cough\*, and I've used pretty 
 
 In these pages, I'll try to explain how the system works, how I use it, and how you can make it work the way you do (because, let's be honest, the chances of you agreeing 100% with me on all the decisions I've made are pretty slim).
 
+If you came here after reading the setup instructions on the Github repo, you already have everything you need to start working. Otherwise, head to the [installation](/installation) section to get your system ready to roll.
+
 Next stop: get to know [the philosophy](/philosophy), [the workflow](/workflow) or read the full [documentation](/docs).
 
 
