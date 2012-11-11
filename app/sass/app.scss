@@ -28,6 +28,18 @@ body {
   color: $body_text_color;
 }
 
+.alert {
+  width: $page_width;
+  margin: 0 auto;
+  margin-top: 30px;
+  background: #ff0 url(/images/bg-alert.png) left top repeat-x;
+  padding: 1em;
+  padding-top: 1.2em;
+  @include border-radius(2px);
+  font-weight: 600;
+  color: $dark_grey;
+}
+
 .page {
   width: $page_width;
   margin: 0 auto;

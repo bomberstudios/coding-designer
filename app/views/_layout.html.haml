@@ -17,5 +17,8 @@
           %li{ :class => (link == routeclass ? 'active' : nil) }=link_to link.capitalize, link
         %li#github=link_to "Github »", "https://github.com/bomberstudios/coding-designer"
 
+    .alert
+      Remember, kids: this is a beta.
+
     .page
       = yield
