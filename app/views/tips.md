@@ -15,3 +15,8 @@ Even better: if you ever need to go back to a previous version, you only have to
 ## Version Control
 
 **Output files never go into version control**. If you are using a preprocessor, forget about adding CSS files to the repository. They are dynamically generated, and keeping track of changes is both useless and confusing. Ditto for .js files if you are using CoffeeScript, or compressed PNG files if you are using the Fireworks trick commented earlier. Your deployment system should take care of generating those files for your.
+
+
+## Code Editing
+
+**Save On Focus Lost**. If your editor has an option, a preference, or a plugin to enable "save on focus lost" (i.e: unsaved documents get saved to disk whenever you switch to another app), **enable it now**. If it doesn't, consider switching editors seriously. Saving when switching to the browser will make your live easier, save you some keystrokes, and in general make the world a better place (specially if you user LiveReload).
