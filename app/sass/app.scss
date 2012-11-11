@@ -32,7 +32,8 @@ body {
   width: $page_width;
   margin: 0 auto;
   margin-top: 30px;
-  background: #ff0 url(/images/bg-alert.png) left top repeat-x;
+  background: #fe0 url(/images/bg-alert.png) left top repeat-x;
+  border: 1px solid #333;
   padding: 1em;
   padding-top: 1.2em;
   @include border-radius(2px);
