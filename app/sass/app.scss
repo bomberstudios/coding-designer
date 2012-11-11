@@ -14,7 +14,7 @@ $menu_link_color_selected: $orange;
 $body_text_color: #000;
 $link_color: $orange;
 
-$page_width: 700px;
+$page_width: 714px;
 $body_font_family: "Source Sans Pro";
 $title_font_family: "Oswald";
 
@@ -69,6 +69,15 @@ body {
   }
   p {
     text-indent: 1em;
+  }
+  img {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+  }
+  p > img {
+    margin-left: -1em;
   }
 }
 
