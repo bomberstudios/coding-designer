@@ -35,11 +35,6 @@ end
 # Other Rack Middleware
 use Rack::ShowStatus      # Nice looking 404s and other messages
 use Rack::ShowExceptions  # Nice looking errors
-# rack-footnotes
-require 'rack/footnotes'
-use Rack::FootNotes, {
-  :notes_path => 'app/notes'
-}
 
 # Rack Application
 if ENV['SERVER_SOFTWARE'] =~ /passenger/i
@@ -55,10 +50,19 @@ end
 
 # rack-smusher
 if ENV['RACK_ENV'] != 'production'
+
+  # auto-compress images
   require 'rack/smusher'
   use Rack::Smusher, {
     :source => "app/images",
     :target => "www/images",
     :base_url => "/images/"
   }
+
+  # show footnotes
+  require 'rack/footnotes'
+  use Rack::FootNotes, {
+    :notes_path => 'app/notes'
+  }
+
 end

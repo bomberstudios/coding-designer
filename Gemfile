@@ -25,10 +25,10 @@ gem 'haml'
 # Coffee Script
 # gem 'coffee-script'
 
-# Footnotes
-gem 'rack-footnotes'
 
 group :development do
+  # Footnotes
+  gem 'rack-footnotes'
   gem 'rack-smusher'
   gem 'git-up'
   gem 'guard-compass'
