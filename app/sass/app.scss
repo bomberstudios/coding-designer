@@ -48,6 +48,14 @@ body {
   h1 {
     font-weight: 200;
     font-size: 26px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 10px;
+    small {
+      display: block;
+      font-size: 13px;
+      margin-top: 8px;
+      color: #ccc;
+    }
   }
   padding: 10px;
   ul {
@@ -56,6 +64,14 @@ body {
     padding: 0;
     li {
       padding: 10px 0 10px 0;
+      border-bottom: 1px solid #fff;
+      &.active {
+        border-bottom: 1px solid $orange;
+        a {
+          //font-weight: 400;
+          color: $menu_link_color_selected;
+        }
+      }
     }
   }
   a,
@@ -64,13 +80,6 @@ body {
     text-decoration: none;
     font-size: 14px;
     font-weight: 300;
-  }
-  .active {
-    border-bottom: 1px solid $orange;
-    a {
-      font-weight: 400;
-      color: $menu_link_color_selected;
-    }
   }
 }
 

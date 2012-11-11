@@ -15,9 +15,14 @@
       Remember, kids: this is a beta.
 
     .menu
-      %h1 The Coding Designer
+      %h1
+        The Coding Designer
+        %small
+          a web-book about a
+          %em modern
+          design process
       %ul
-        %li{ :class => (routeclass == 'index' ? 'active' : nil) }=link_to "Start", "/"
+        %li{ :class => (routeclass == 'index' ? 'active' : nil) }=link_to "Welcome", "/"
         - menu_links.each do |link|
           %li{ :class => (link == routeclass ? 'active' : nil) }=link_to link.capitalize, link
         %li#github=link_to "Github »", "https://github.com/bomberstudios/coding-designer"
