@@ -11,4 +11,5 @@ Of course, if your printer is a *very* good friend you can get almost the same r
 
 **You can *create* techniques**. Come up with your own, unique ways of producing design.
 
-That, for me, justifies alone the price of admission.
+That alone, for me, justifies the price of admission.
+
