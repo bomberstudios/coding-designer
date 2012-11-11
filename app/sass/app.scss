@@ -103,6 +103,13 @@ body {
     padding-bottom: 10px;
     margin-top: 50px;
   }
+  h1 + h3 {
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #999;
+    margin-top: -10px;
+  }
   a,
   a:visited {
     font-weight: 400;
@@ -119,11 +126,20 @@ body {
   }
   h1 + p,
   h2 + p,
+  h1 + h3 + p,
   blockquote p {
     text-indent: 0;
   }
   p {
+    width: 600px;
     text-indent: 1em;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  ul {
+    width: 600px;
+    line-height: 24px;
+    margin-bottom: 20px;
   }
   img {
     background-color: #f0f0f0;

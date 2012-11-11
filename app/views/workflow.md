@@ -1,6 +1,6 @@
 # Workflow
 
-The process I follow when designing a web site goes like this:
+### The process I follow when designing a web site
 
 ## 1. Paper sketching
 

@@ -1,4 +1,6 @@
 # Tips & Tricks
+### Little details that make life easy
+
 
 ## Graphics
 
