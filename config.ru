@@ -48,16 +48,16 @@ else
   ])
 end
 
-# rack-smusher
+# auto-compress images with rack-smusher
+require 'rack/smusher'
+use Rack::Smusher, {
+  :source => "app/images",
+  :target => "www/images",
+  :base_url => "/images/"
+}
+
 if ENV['RACK_ENV'] != 'production'
 
-  # auto-compress images
-  require 'rack/smusher'
-  use Rack::Smusher, {
-    :source => "app/images",
-    :target => "www/images",
-    :base_url => "/images/"
-  }
 
   # show footnotes
   require 'rack/footnotes'
