@@ -9,7 +9,7 @@ $dark_grey: #444;
 $darker_grey: #222;
 
 $menu_bg: $dark_grey;
-$menu_link_color: #fff;
+$menu_link_color: #333;
 $menu_link_color_selected: $orange;
 $body_text_color: #000;
 $link_color: $orange;
@@ -29,21 +29,54 @@ body {
 }
 
 .alert {
-  width: $page_width;
   margin: 0 auto;
-  margin-top: 30px;
-  background: #fe0 url(/images/bg-alert.png) left top repeat-x;
-  border: 1px solid #333;
+  background-color: #fd0 + #ccc;
   padding: 1em;
-  padding-top: 1.2em;
-  @include border-radius(2px);
-  font-weight: 600;
+  font-weight: 300;
+  font-size: 18px;
   color: $dark_grey;
+  text-align: center;
+}
+
+.menu {
+  position: fixed;
+  left: 60px;
+  top: 60px;
+  width: 240px;
+  text-align: right;
+  margin-top: 60px;
+  h1 {
+    font-weight: 200;
+    font-size: 26px;
+  }
+  padding: 10px;
+  ul {
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+    li {
+      padding: 10px 0 10px 0;
+    }
+  }
+  a,
+  a:visited {
+    color: $menu_link_color;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .active {
+    border-bottom: 1px solid $orange;
+    a {
+      font-weight: 400;
+      color: $menu_link_color_selected;
+    }
+  }
 }
 
 .page {
   width: $page_width;
-  margin: 0 auto;
+  margin-left: 360px;
   margin-top: 40px;
   margin-bottom: 100px;
   h1 {
@@ -92,59 +125,31 @@ body {
   p > img {
     margin-left: -1em;
   }
-}
-
-.menu {
-  background-color: $menu_bg;
-  padding: 10px;
-  ul {
-    width: $page_width;
-    margin: 0 auto;
-    list-style: none;
-    padding: 0;
-    li {
-      padding: 10px;
-      display: inline;
-      margin-right: 15px;
-    }
-  }
-  a,
-  a:visited {
-    color: $menu_link_color;
-    text-decoration: none;
+  code {
+    font-family: Consolas, Menlo, fixed;
     font-size: 14px;
-    font-weight: 300;
+    background-color: #ccc;
+    padding: 0 4px;
+    @include border-radius(3px);
+  }
+  pre > code {
+    background-color: $dark_grey;
+    color: #0f0;
+    padding: 10px;
+  }
+  blockquote {
+    color: #999;
+    font-family: Georgia, serif;
+    font-style: italic;
   }
 }
-
-.menu .active {
-  border-bottom: 2px solid $orange;
-  //background-color: $orange;
-  a {
-    //font-weight: 700;
-    color: $menu_link_color_selected;
-  }
-}
-
-code {
-  font-family: Consolas, Menlo, fixed;
-  font-size: 14px;
-  background-color: #ccc;
-  padding: 0 4px;
-  @include border-radius(3px);
-}
-pre > code {
-  background-color: $dark_grey;
-  color: #0f0;
-  padding: 10px;
+.footer {
+  margin-top: 40px;
+  color: #999;
+  font-size: 0.8em;
 }
 
 #racknotes {
   font-size: 13px;
 }
 
-blockquote {
-  color: #999;
-  font-family: Georgia, serif;
-  font-style: italic;
-}
