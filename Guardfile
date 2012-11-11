@@ -4,5 +4,5 @@ end
 
 guard 'livereload' do
   watch(%r{^www/.+\.(css|js|html)})
-  watch(%r{views/.+\.(erb|haml|rb)})
+  watch(%r{app/views/.+\.(erb|haml|rb|md)})
 end

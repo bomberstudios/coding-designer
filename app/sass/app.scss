@@ -1,20 +1,27 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:300);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic);
+
 @import "compass/css3";
 
 $orange: #f60;
+$dark_orange: #f30;
 $dark_grey: #444;
+$darker_grey: #222;
 
 $menu_bg: $dark_grey;
 $menu_link_color: #fff;
 $menu_link_color_selected: $orange;
-$body_text_color: $dark_grey;
+$body_text_color: #000;
 $link_color: $orange;
 
-$page_width: 800px;
-
+$page_width: 700px;
+$body_font_family: "Source Sans Pro";
+$title_font_family: "Oswald";
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $body_font_family, Helvetica, Arial, sans-serif;
   font-size: 16px;
+  font-weight: 300;
   line-height: 22px;
   margin: 0;
   padding: 0;
@@ -24,16 +31,18 @@ body {
 .page {
   width: $page_width;
   margin: 0 auto;
-  font-weight: 300;
+  margin-top: 40px;
   margin-bottom: 100px;
   h1 {
-    font-weight: 200;
-    font-size: 30px;
+    font-family: $title_font_family;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 38px;
     color: $orange;
   }
   h2 {
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 600;
     color: $dark_grey;
     border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
@@ -41,7 +50,25 @@ body {
   }
   a,
   a:visited {
+    font-weight: 400;
+    text-decoration: none;
     color: $link_color;
+  }
+  a:hover {
+    color: $dark_orange;
+    border-bottom: 1px dotted $dark_orange;
+  }
+  strong {
+    font-weight: 600;
+    color: $dark_grey;
+  }
+  h1 + p,
+  h2 + p,
+  blockquote p {
+    text-indent: 0;
+  }
+  p {
+    text-indent: 1em;
   }
 }
 
@@ -49,7 +76,7 @@ body {
   background-color: $menu_bg;
   padding: 10px;
   ul {
-    width: 800px;
+    width: $page_width;
     margin: 0 auto;
     list-style: none;
     padding: 0;
@@ -68,25 +95,23 @@ body {
   }
 }
 
-body.index    .menu #start,
-body.docs     .menu #docs,
-body.workflow .menu #workflow,
-body.updating .menu #updating {
-  border-bottom: 3px solid $orange;
+.menu .active {
+  border-bottom: 2px solid $orange;
+  //background-color: $orange;
   a {
-    font-weight: 500;
+    //font-weight: 700;
     color: $menu_link_color_selected;
   }
 }
 
 code {
+  font-family: Consolas, Menlo, fixed;
+  font-size: 14px;
   background-color: #ccc;
   padding: 0 4px;
   @include border-radius(3px);
 }
 pre > code {
-  font-family: Consolas, Menlo, fixed;
-  font-size: 12px;
   background-color: $dark_grey;
   color: #0f0;
   padding: 10px;

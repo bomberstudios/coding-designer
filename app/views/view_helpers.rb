@@ -16,4 +16,16 @@ module ViewHelpers
     end
   end
 
+  def markdown_files
+    return Dir['app/views/**.md']
+  end
+  def menu_links
+    #links = []
+    #markdown_files.each do |file|
+    #  links << File.basename(file,'.md')
+    #end
+    #return links
+    return ['workflow','docs','updating']
+  end
+
 end

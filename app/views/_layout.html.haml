@@ -10,11 +10,10 @@
   %body{ :class => routeclass }
     .menu
       %ul
-        %li#start=link_to "Start", "/"
-        %li#workflow=link_to "Workflow", "/workflow"
-        %li#docs=link_to "Documentation", "/docs"
-        %li#updating=link_to "Updating", "/updating"
-        %li#github=link_to "Github", "https://github.com/bomberstudios/coding-designer"
+        %li{ :class => (routeclass == 'index' ? 'active' : nil) }=link_to "Start", "/"
+        - menu_links.each do |link|
+          %li{ :class => (link == routeclass ? 'active' : nil) }=link_to link.capitalize, link
+        %li#github=link_to "Github »", "https://github.com/bomberstudios/coding-designer"
 
     .page
       = yield

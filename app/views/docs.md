@@ -2,15 +2,6 @@
 
 **Remember:** this is a work in progress.
 
-## Introduction
-
-If you are reading this, it means you are interested in using a workflow for front-end design / development that is both powerful and painless. Well, I have good news for you: **this is it**.
-
-I've been editing HTML for \*cough\* *15 years* \*cough\*, and I've used pretty much any tool worth having a look at. My current setup is the result of picking (what I consider to be) the best tools for the job, and it makes the process of designing and developing as painless and joyful as I can possibly imagine.
-
-In this pages, I'll try to explain how the system works, how I use it, and how you can make it work the way you do (because, let's be honest, the chances of you agreeing 100% with me on all the decisions I've made are pretty slim).
-
-
 ## What's under the hood
 
 My choice of languages when it comes to front-end code is pretty personal. For HTML, I like [Haml](http://haml.info) (in fact, I've never written a single line of HTML since I started using it), for CSS I love [Sass](http://sass-lang.com) (in its SCSS incarnation, paired with [Compass](http://compass-style.org)) and for JavaScript I use, well, good old JavaScript.
@@ -23,7 +14,7 @@ The best tool I've found for putting all these technologies together is [Serve](
 
 Don't let the Rails part make you nervous. Serve can be used to develop static sites, dynamic sites, and even (gasp) PHP code. Serve itself is written in [Ruby](http://ruby-lang.com). Hopefully you'll learn a bit of it, and maybe get to love it like I do, but you don't need to know Ruby to use Serve.
 
-If you don't like my choices, or simply need to use a different combination, Serve supports ERB, Erubis, Slim, Radius, Less, Sass, CoffeeScript and Textile (and other, more esoteric template engines supported by [Tilt](https://github.com/rtomayko/tilt))
+If you don't like my choices, or simply need to use a different combination, Serve supports ERB, Erubis, Slim, Radius, Less, Sass, CoffeeScript and Textile (and other, more esoteric template engines supported by [Tilt](https://github.com/rtomayko/tilt)).
 
 To make all this technology visible, we'll use [Pow](http://pow.cx), a really smart piece of software that makes your code available to a web browser using a friendly URL. Pow is quite simple to setup and use, but [Anvil](http://anvilformac.com) is a graphical front end that makes it ridiculously easy. **We love easy**, so Anvil is part of the toolchain.
 
