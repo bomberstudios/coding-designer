@@ -27,4 +27,26 @@ Whenever you introduce a new tool or technique in your arsenal, there's a period
 
 **It takes *a lot* of time for code to become invisible**.
 
-If you are not willing to spend that much time, I honestly recommend you to invest your scarce spare time on something else. Typography, color theory, animation or storytelling can bring you great joy in a short time, without any side effects.
+If you are not willing to spend that much time, I honestly recommend you to invest your scarce free time on something else. Typography, color theory, animation or storytelling can bring you great joy in a short time, without any side effects.
+
+If, on the other hand, you have already decided that thinking on the macro and micro level when solving design problems is your thing, you are most welcome to join this adventure.
+
+Now, if you are the kind of person that needs a bit more information before deciding whether to take the plunge or not, here's a more detailed list of some the more important issues you'll find when designing in code.
+
+These are based on my personal experience, and I'm sure you'll find more when you get your hands dirty. When appropriate, I've added some tricks you can use when dealing with them.
+
+## The pitfalls of designing in code
+
+### Forgetting the macro level: pixel-perfect crap
+
+### The trap of beautiful code: writing clean, valid, semantic ugliness
+
+### The best time to move from Photoshop to code is always earlier or later than you did
+
+### Thinking in blocks: how the box-model will fuck your brains and make your design suck
+
+### FREE DROP SHADOWS!!!!1eleven: creating crap "because you can"
+
+
+## The joys of designing in code
+
