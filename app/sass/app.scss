@@ -112,6 +112,12 @@ body {
     padding-bottom: 10px;
     margin-top: 50px;
   }
+  h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: $dark_grey;
+    padding-bottom: 10px;
+  }
   h1 + h3 {
     font-family: $title_font_family;
     font-size: $body_font_size * 1.2;
