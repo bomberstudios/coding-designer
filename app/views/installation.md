@@ -23,7 +23,7 @@ First, let's install the basic tools. We'll use these three to install the rest.
 
 Once the basic tools are installed, we are ready to start having *fun*:
 
-1. Click the "Clone in Mac" button you see on the top of this page. Github for Mac will open and prompt you for a folder to save the project.
+1. Visit the [Github page for the project](https://github.com/bomberstudios/coding-designer). Click the "Clone in Mac" button you see on the top of that page. Github for Mac will open and prompt you for a folder to save the project.
 2. Open Terminal.app and drag the folder you just created to Terminal.app's icon on the Dock.
 3. Type ``sudo gem install bundler`` and enter your password.
 4. Type ``bundle install`` and let your Mac install everything else.
