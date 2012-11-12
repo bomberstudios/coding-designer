@@ -36,7 +36,6 @@ body {
 }
 
 .alert {
-  width: 100%;
   margin: 0 auto;
   background-color: #fd0 + #ccc;
   padding: 1em;
@@ -243,4 +242,26 @@ body {
 
 #racknotes {
   font-size: 13px;
+}
+
+@media screen and (max-width: 700px) {
+  .alert {
+    //display: none;
+  }
+  .menu {
+    width: 100%;
+  }
+  .page {
+    width: 90%;
+    margin: 0 auto;
+    p, ul, ol {
+      width: auto;
+    }
+    ul, ol {
+      margin-left: 2em;
+    }
+    img {
+      width: 100%;
+    }
+  }
 }
