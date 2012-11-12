@@ -20,3 +20,8 @@ Even better: if you ever need to go back to a previous version, you only have to
 ## Code Editing
 
 **Save On Focus Lost**. If your editor has an option, a preference, or a plugin to enable "save on focus lost" (i.e: unsaved documents get saved to disk whenever you switch to another app), **enable it now**. If it doesn't, consider switching editors seriously. Saving when switching to the browser will make your live easier, save you some keystrokes, and in general make the world a better place (specially if you user LiveReload).
+
+
+## Collaboration
+
+**Nobody needs to know you code**. Your client / team / boss expects PNGs instead of HTMLs? Use screenshots. Tools like [Paparazzi](http://derailer.org/paparazzi/ "Paparazzi!") or [Little Snapper](http://www.realmacsoftware.com/littlesnapper/ "Screenshot & Website Capture For Mac - LittleSnapper") let you capture a whole web page (including areas below "the fold") effortlessly. Even better, you can use a commandline screen grabbing tool like  [webkit2png](http://www.paulhammond.org/webkit2png/) and have your files generated automatically.
