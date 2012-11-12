@@ -40,7 +40,7 @@ body {
   background-color: #fd0 + #ccc;
   padding: 1em;
   font-weight: 300;
-  font-size: 18px;
+  font-size: $body_font_size;
   color: $dark_grey;
   text-align: center;
 }
