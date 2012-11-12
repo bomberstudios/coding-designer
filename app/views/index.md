@@ -1,4 +1,5 @@
 # Welcome
+### It is an honor to have you here
 
 If you are reading this, it means you are interested in using a workflow for front-end design / development that is both powerful and painless. Well, I have good news for you: **this is it**.
 
