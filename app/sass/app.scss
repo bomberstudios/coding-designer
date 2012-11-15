@@ -29,6 +29,7 @@ body {
   font-family: $body_font_family, Helvetica, Arial, sans-serif;
   font-weight: $body_font_weigth;
   font-size: $body_font_size;
+  text-rendering: optimizeLegibility;
   line-height: $body_font_size * $line_height_multiplier;
   margin: 0;
   padding: 0;
