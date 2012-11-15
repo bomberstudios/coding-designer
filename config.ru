@@ -26,11 +26,6 @@ Compass.add_project_configuration(root + '/compass.config')
 Compass.configure_sass_plugin!
 use Sass::Plugin::Rack  # Sass Middleware
 
-if ENV['RACK_ENV'] != 'production'
-  require 'rack-livereload'
-  use Rack::LiveReload
-end
-
 # Other Rack Middleware
 use Rack::ShowStatus      # Nice looking 404s and other messages
 use Rack::ShowExceptions  # Nice looking errors
@@ -48,16 +43,10 @@ else
   ])
 end
 
-# auto-compress images with rack-smusher
-require 'rack/smusher'
-use Rack::Smusher, {
-  :source => "app/images",
-  :target => "www/images",
-  :base_url => "/images/"
-}
-
 if ENV['RACK_ENV'] != 'production'
-
+  # enable LiveReload
+  require 'rack-livereload'
+  use Rack::LiveReload
 
   # show footnotes
   require 'rack/footnotes'
@@ -65,4 +54,19 @@ if ENV['RACK_ENV'] != 'production'
     :notes_path => 'app/notes'
   }
 
+  # auto-compress images with rack-smusher
+  require 'rack/smusher'
+  use Rack::Smusher, {
+    :source => "app/images",
+    :target => "www/images",
+    :base_url => "/images/"
+  }
+else
+  # auto-compress images with rack-smusher
+  require 'rack/smusher'
+  use Rack::Smusher, {
+    :source => "app/images",
+    :target => "tmp/images",
+    :base_url => "/images/"
+  }
 end
