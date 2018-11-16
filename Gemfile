@@ -1,5 +1,6 @@
 source :rubygems
 
+gem 'rack'
 gem 'rake'
 
 # Use latest (stable) serve
@@ -26,18 +27,15 @@ gem 'haml'
 # gem 'coffee-script'
 
 gem 'rack-smusher'
+gem 'thin'
 
 group :development do
   # Footnotes
   gem 'rack-footnotes'
-  gem 'git-up'
   gem 'guard-compass'
   gem 'guard-livereload'
   gem 'rack-livereload'
   gem 'yajl-ruby'
   gem 'rb-fsevent'
   gem 'terminal-notifier-guard'
-  # gem 'heroku' # optional & deprecated :)
 end
-
-gem 'thin'
